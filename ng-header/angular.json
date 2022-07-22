@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "header": {
+    "ng-header": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,12 +12,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app-header",
+      "prefix": "mfe-header",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/header",
+            "outputPath": "dist/ng-header",
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
             "polyfills": "src/polyfills.ts",
@@ -33,7 +33,7 @@
             "scripts": [],
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "header",
+              "libraryName": "ng-header",
               "libraryTarget": "umd"
             },
             "deployUrl": "http://localhost:4201/"
@@ -76,10 +76,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "header:build:production"
+              "browserTarget": "ng-header:build:production"
             },
             "development": {
-              "browserTarget": "header:build:development"
+              "browserTarget": "ng-header:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "header:build"
+            "browserTarget": "ng-header:build"
           }
         },
         "test": {
