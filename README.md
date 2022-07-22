@@ -13,6 +13,8 @@ ng add single-spa-angular
 * port: 9000
 ```
 create-single-spa --moduleType root-config
+cd shell
+npm run start
 ```
 
 ## Header
@@ -22,6 +24,8 @@ create-single-spa --moduleType root-config
 ng new header --routing --prefix app-header
 cd header
 ng add single-spa-angular
+
+npm run serve:single-spa:header
 ```
 
 ## Table
@@ -31,4 +35,6 @@ ng add single-spa-angular
 ng new ng-table --routing --prefix mfe-table
 cd ng-table
 ng add single-spa-angular
+
+npm runv serve:single-spa:ng-table
 ```
