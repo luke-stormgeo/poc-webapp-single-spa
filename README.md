@@ -1,6 +1,6 @@
 # Single SPA Demo
 
-## Demo
+## Development Demo
 ```sh
 # each command needs to run in it's own terminal window
 
@@ -18,6 +18,15 @@ cd react-map && npm start
 
 ## now visit: http://localhost:3000
 
+```
+
+## Production Demo
+```sh
+npm i -g http-server
+cd demo 
+http-server
+
+# now visit: http://localhost:8080
 ```
 
 
